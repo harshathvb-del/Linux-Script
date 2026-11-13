@@ -1,0 +1,8 @@
+clear
+echo "Hopefully this works"
+
+if [ "$EUID" -ne 0 ]; then
+    echo "Please run this script with sudo (e.g., sudo ./script.sh)"
+    exit 1
+fi
+
